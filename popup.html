@@ -1,0 +1,56 @@
+<!--
+Copyright (c) 2011, Shaoting Cai
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without 
+modification, are permitted provided that the following conditions 
+are met:
+
+Redistributions of source code must retain the above copyright 
+notice, this list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright 
+notice, this list of conditions and the following disclaimer in 
+the documentation and/or other materials provided with the 
+distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS 
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT 
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
+FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE 
+COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER 
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT 
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN 
+ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+POSSIBILITY OF SUCH DAMAGE.
+-->
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>   
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>   
+<script type="text/javascript" src="js/app.js"></script>   
+<script type="text/javascript">
+$(document).ready(initPopup);
+</script>   
+
+<link href="css/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css"> 
+<link href="css/style.css" rel="stylesheet" type="text/css"> 
+
+<div align="center">
+<h2>Type in issue number then press enter.</h2>
+<div id="main">
+	<input id="bug-id" type="text" size="6" maxlength="20"/>
+	<button onclick="openBug()">Open</button>
+</div>
+</div>
+
+<h2>Recent Items</h2>
+<ul id="history">
+</ul>
+
+<ul id="navbar">
+    <li><a href="#" onclick="openOptions()" title="open option page">options</a></li>
+    <li><a href="#" onclick="openDashboard()" title="open dashboard page">dashboard</a></li>
+    <li><a href="https://chrome.google.com/webstore/detail/ocjecccldncbghkfbplmopcgafnfffoc" target="_blank" title="open extension homepage">Goto Bug (for JIRA)</a></li>
+</ul>
+

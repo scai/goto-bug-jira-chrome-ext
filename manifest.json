@@ -1,0 +1,17 @@
+{
+  "name": "Goto Bug (for JIRA)",
+  "version": "1.1",
+  "description": "This extension lets you quickly open a Jira issue by name. It also shows a list of recent visited issues.",
+  "browser_action": {
+    "default_icon": "css/images/Go-Into-16.png",
+	"popup": "popup.html"
+  },
+  "icons": { "16": "css/images/Go-Into-16.png",
+             "48": "css/images/Go-Into-48.png",
+             "128": "css/images/Go-Into-128.png" },
+  "permissions": [
+	"tabs",
+	"history"
+  ],
+  "options_page": "options.html"  
+}

@@ -1,0 +1,128 @@
+body {
+	min-width:350px;
+	min-height:250px;
+	font-family:sans-serif !important;
+	font-size:14px;	
+	text-shadow:#AAA 1px 1px 1px;
+}
+
+body.options {
+	background-image: url("images/noise.png");	
+}
+
+a:link, a:visited { text-decoration:none; color:#666; }
+a:hover, a:active { text-decoration:none; color:#000; }
+
+h1 {
+	text-align:center;
+}
+
+h2 {
+	margin:0;
+	padding:0;
+	text-align:center;	
+	text-shadow:#AAA 1px 1px 1px;
+	font-size:14px;
+}
+
+input {
+	border:solid 1px silver;
+	font-family:sans-serif;
+	font-size : 20px;
+}
+
+input#bug-id { 	
+	background: url("images/Go-Into-16.png") no-repeat 2px 50%;
+	padding-left: 20px;
+}
+
+input.option-text {
+	width: 35em;
+}
+
+
+div, ul, li {
+	margin:0;
+	padding:0;
+}
+
+.splitter {
+	padding:0 .5em 0 .5em;
+}
+
+#bug-id {
+	width:11em;
+}
+
+#history {
+	margin:4px;	
+	max-width: 340px;
+}
+
+#history li {
+	padding: 2px 0 2px 0;
+	border-width: 1px 0 0 0;
+	border-style:dotted;
+	border-color:#ccc;  
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+#history li:last-child {
+	border-width: 1px 0 1px 0;
+}
+
+#history li:hover {
+	background-color:#FFFFDD;
+}
+
+#main {
+	margin: 20px;
+}
+
+#options {	
+	text-align: left;
+	background-color:white;
+	border-radius:10px;
+	padding:2em;
+	display:inline-block;
+}
+
+#auto-fill-options {
+	border-width:1px 0 1px 0;
+	border-style:dotted;
+	border-color:silver;
+	margin: 1em 0 1em 0;
+	padding: 1em 0 0 0;
+}
+
+.hints {
+	margin-bottom:1em;
+	font-size:80%;
+	color:#666;
+}
+
+ul#navbar {
+	margin:0;
+	padding:0;
+	position:absolute;
+	right:0;
+	bottom:.5em;
+	list-style:none;
+	text-align:right;
+}
+
+ul#navbar li {
+	font-size:80%;
+	margin:0;
+	padding:0 1em 0 1em;
+	border-width:0 1px 0 0;
+	border-style:solid;
+	border-color:silver;
+	display:inline;
+}
+
+ul#navbar li:last-child {
+	border-width:0;
+}

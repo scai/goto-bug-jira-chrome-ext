@@ -1,0 +1,80 @@
+<!--
+Copyright (c) 2011, Shaoting Cai
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without 
+modification, are permitted provided that the following conditions 
+are met:
+
+Redistributions of source code must retain the above copyright 
+notice, this list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright 
+notice, this list of conditions and the following disclaimer in 
+the documentation and/or other materials provided with the 
+distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS 
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT 
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
+FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE 
+COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER 
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT 
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN 
+ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+POSSIBILITY OF SUCH DAMAGE.
+-->
+<html>
+<head>
+<title>"Goto Bug" Extension - Options</title>
+
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script> 
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>   
+<script type="text/javascript" src="js/app.js"></script>   
+<script type="text/javascript">
+$(document).ready(initOptions);
+</script>   
+
+<link href="css/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css"> 
+<link href="css/style.css" rel="stylesheet" type="text/css"> 
+
+</head>
+
+<body class="options">
+<div id="main" align="center">
+<div id="options">
+	<h1>"Goto Bug" Extension - Options</h1>
+	<div>
+		<label for="sample-url">Paste a sample Jira issue URL here:</label><br>
+		<input type="text" class="option-text" id="sample-url" />
+		<button onclick="analyze()">Analyze</button>
+		<div class="hints">For example, "https://jira.atlassian.com/browse/JRA-1000"</div>
+		
+	</div>
+	<div id="auto-fill">
+		<div id="auto-fill-options">
+			<label for="base-url">Base URL</label><br>
+			<input type="text" class="option-text" id="base-url" />
+			<div class="hints">Something like "https://jira.atlassian.com/"</div>
+			
+			<label for="dashboard-url">Dashboard URL</label><br>
+			<input type="text" class="option-text" id="dashboard-url" />
+			<div class="hints">Something like "https://jira.atlassian.com/secure/Dashboard.jspa"</div>
+			
+			<label for="favorite">Favorite Projects</label><br>
+			<input type="text" class="option-text" id="favorite" />
+			<div class="hints">Space-separated list of favorite project short names, like "JRA FE BAM".</div>
+		</div>
+		<div align="center">
+			<div class="hints">Please review the auto-generated parameters.</div>
+			<button onclick="saveOptions()">Save and Close</button>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
+
+
